@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopify API, from Shopify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Shopify API</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- <p class="navbar-text pull-right">Logged in as <a href="#">username</a></p> -->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Big Stuff</li>
+              <li class="active"><a href="#">Authentication</a></li>
+              <li><a href="#">Application Proxy</a></li>
+              <li><a href="#">Cart Manipulation</a></li>
+              <li class="nav-header">Billing</li>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Application Charges</a></li>
+              <li><a href="#">Recurring Application Charges</a></li>
+              <li class="nav-header">API Reference</li>
+              <li><a href="article.html" class="active">Article</a></li>
+              <li><a href="asset.html" class="active">Asset</a></li>
+              <li><a href="blog.html" class="active">Blog</a></li>
+              <li><a href="cart.html" class="active">Cart</a></li>
+              <li><a href="collect.html" class="active">Collect</a></li>
+              <li><a href="comment.html" class="active">Comment</a></li>
+              <li><a href="country.html" class="active">Country</a></li>
+              <li><a href="customcollection.html" class="active">Custom Collection</a></li>
+              <li><a href="customer.html" class="active">Customer</a></li>
+              <li><a href="customergroup.html" class="active">Customer Group</a></li>
+              <li><a href="event.html" class="active">Event</a></li>
+              <li><a href="fulfillment.html" class="active">Fulfillment</a></li>
+              <li><a href="metafield.html" class="active">Metafield</a></li>
+              <li><a href="order.html" class="active">Order</a></li>
+              <li><a href="page.html" class="active">Page</a></li>
+              <li><a href="product.html" class="active">Product</a></li>
+              <li><a href="product_image.html" class="active">Product Image</a></li>
+              <li><a href="product_variant.html" class="active">Product Variant</a></li>
+              <li><a href="productsearchengine.html" class="active">Product Search Engine</a></li>
+              <li><a href="province.html" class="active">Province</a></li>
+              <li><a href="redirect.html" class="active">Redirect</a></li>
+              <li><a href="scripttag.html" class="active">Script Tag</a></li>
+              <li><a href="shop.html" class="active">Shop</a></li>
+              <li><a href="smartcollection.html" class="active">Smart Collection</a></li>
+              <li><a href="theme.html" class="active">Theme</a></li>
+              <li><a href="transactions.html" class="active">Transactions</a></li>
+            <li><a href="webhook.html" class="active">Webhook</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1>Hello, Shopify API!</h1>
+            <p>Shopify’s API lets you programmatically do almost anything merchants can do with their Shopify stores. You can look over orders, modify products, research customers, play with collections, and more. In a nutshell:
+            </p>
+            <p><strong>Shopify API == OAuth 2 + HTTP + (JSON | XML) // REST</strong></p>
+            <p>Adapters for Ruby, Python, PHP, Java, and Node.js exist, but all you really need is HTTP and some love. Give us a shout if you run into any trouble.</p>
+            <!-- <p>Technically speaking, the Shopify API is RESTful JSON or XML over HTTP using all four verbs (GET/POST/PUT/DELETE) authenticated over OAuth 2. Each resource, like Order, Product, or Collection, has its own URL and is manipulated in isolation.</p> -->
+
+            <!-- <p>All API usage happens through Shopify applications, created by either shop owners for their own shops, or by Shopify Partners for use by shop owners.</p> -->
+            <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <h2>Getting Started</h2>
+              <p>Dive into making your first Shopify app. We’ll walk you through the process of obtaining an API key, creating a test shop, and playing around with the API. Later, we’ll point out how to use Shopify’s single sign for smooth sailing to tons of installs.</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>Tutorials</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>Resources</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+          <div class="row-fluid">
+            <div class="span4">
+              <h2>Examples</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>People</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>Jobs</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Shopify 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
